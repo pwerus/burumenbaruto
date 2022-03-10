@@ -1,14 +1,15 @@
 var prompt = require("prompt-sync")();
 
 var danganronpa = parseInt(prompt("Qual danganronpa está jogando? (Insira o número) "))
+var capituloDangan = parseInt(prompt("Qual capítulo você está? (Insira o número) "))
 
-if(danganronpa == 1 ){ 
-    var capituloDangan1 = parseInt(prompt("Qual capítulo você está? (Insira o número) "))
-    switch(capituloDangan1) {
+if(danganronpa == 1){ 
+    
+    switch(capituloDangan) {
         case 1:
             console.log("Sayaka morreu.")
             break;
-        case "2":
+        case 2:
             console.log("Chihiro morreu.")
             break;
         case 3:
@@ -25,8 +26,8 @@ if(danganronpa == 1 ){
 }
 }
 if(danganronpa == 2) {
-    var capituloDangan2 = parseInt(prompt("Qual capítulo você está? (Insira o número)"))
-    switch(capituloDangan2) {
+    
+    switch(capituloDangan) {
         case 1:
             console.log("IMPOSTER MORRE.")
             break;
@@ -48,6 +49,3 @@ if(danganronpa == 2) {
     }
 }
 
-else {
-    console.log("não tem o 3 nesse programa")
-}
